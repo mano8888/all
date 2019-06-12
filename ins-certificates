@@ -1,0 +1,30 @@
+sudo apt-get install -y nginx
+ifconfig -->>>> copy the ip adress
+after that 
+
+a2enmod ssl
+
+service nginx restart
+
+mkdir /etc/nginx/ssl
+open ssl
+ -X509 -nodes -days 365 -newkey rsa:2048 -keyout /etc/nginx/ssl/nginx.keyout
+-out /etc/nginx/ssl/nginx.out
+
+next it will asks for 
+
+c.name
+o.name
+ip.adress
+
+vim /etc/nginx/sites-availble/default
+
+here we have to change the hostname
+<virtualhost:443>
+<196.136.112.18:443>
+
+ssl engine on
+
+ssl certificate.key /etc/nginx/ssl/certificate.key
+ssl certificate.out /etc/nginx/ssl/certificate.out
+ 
