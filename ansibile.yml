@@ -1,0 +1,24 @@
+- resource-types:
+        - name: pull-request
+          type: docker-image
+
+        - source:
+          - repository: mano8888/doc
+
+        - name: docker-image
+          type: details
+
+          - source:
+          - repository: https://docker-hub/mano8888/doc-hub
+            username: mano8888
+            password: manu@1406
+            checkout: every1m
+          - resource-type:
+            - web-hook: some webhook token from github
+              
+            - name: github
+              type: some acess token
+               - source: 
+                 repository: https://gihub.com/mano8888/all.git
+                 acces-token: ------------------
+

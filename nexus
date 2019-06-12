@@ -1,0 +1,9 @@
+deploy:deploy-file
+-DgroupId=com.file
+-DartifactId=file
+-Dversion=1.0-SNAPSHOT
+-Dpackaging=war
+-DgeneratePom=false
+-Drepository=nexus
+-Durl=https://nexus-tb.file.com/repository/same
+-Dfile=1.0-SNAPSHOT.war
